@@ -10,7 +10,7 @@ const sendUserCreated = (req, res) => {
 
 const sendUserUpdated = (req, res) => {
     res.setHeader("Content-Type", "application/json");
-    res.end({ message: "Пользователь обновлён" });
+    res.send(JSON.stringify(req.user));
 };
 
 const sendUserDeleted = (req, res) => {

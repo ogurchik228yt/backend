@@ -21,8 +21,7 @@ const {
 
 const { checkAuth } = require("../middlewares/auth");
 
-usersRouter.get("/games/:id", findGameById, sendGameById);
-usersRouter.get("/games", findAllGames, sendAllGames);
+usersRouter.get("/users", findAllUsers, sendAllUsers);
 usersRouter.post(
     "/users",
     findAllUsers,

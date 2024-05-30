@@ -35,7 +35,8 @@ gamesRouter.post(
     sendGameCreated
 ); 
 gamesRouter.put(
-    "/games/:id", 
+    "/games/:id",
+    findGameById,
     checkIsVoteRequest,
     checkIfUsersAreSafe,
     checkIfCategoriesAvaliable,

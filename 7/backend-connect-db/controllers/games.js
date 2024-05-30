@@ -10,7 +10,7 @@ const sendGameCreated = (req, res) => {
 
 const sendGameUpdated = (req, res) => {
     res.setHeader("Content-Type", "application/json");
-    res.end({ message: "Игра обновлена" });
+    res.send(JSON.stringify(req.game));
 };
 
 const sendGameDeleted = (req, res) => {

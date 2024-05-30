@@ -3,7 +3,6 @@ const gamesRouter = require("express").Router();
 const {
     findAllGames,
     createGame,
-    findGameById,
     updateGame,
     deleteGame,
     checkEmptyFields,
@@ -34,7 +33,6 @@ gamesRouter.post(
 ); 
 gamesRouter.put(
     "/games/:id", 
-    findGameById,
     checkIsVoteRequest,
     checkIfUsersAreSafe,
     checkIfCategoriesAvaliable,

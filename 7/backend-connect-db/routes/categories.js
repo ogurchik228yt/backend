@@ -38,7 +38,7 @@ categoriesRouter.put(
 );
 
 categoriesRouter.delete(
-    "/games/:id", 
+    "/categories/:id", 
     checkAuth,
     deleteCategory,
     sendCategoryDeleted 
